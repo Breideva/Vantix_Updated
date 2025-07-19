@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-koh: "Koh Santepheap", "sans-serif";
+  --font-inter: "Inter", "sans-serif";
+
+  --color-bg: #0e0227;
+  --color-stb: rgba(26, 2, 59, 0.5);
+  --color-lstb: rgba(71, 5, 161, 0.5);
+  --color-box: #1a023b;
+  --color-lbox: #4705a1;
+  --color-text: #f4f4f4;
+  --color-l-text: #f4f4f480;
+
+  --color-border: #ae8bf9;
+  --color-button: #6a2af4;
+  --color-button-hover: #1a023b;
+  --color-fade: linear-gradient(to right, #1a023b 25%, #4705a1);
+
+
+  --text-slide: 428px;
+  --text-title: 120px;
+  --leading-title: 120px;
+
+  --text-lg-heading: 64px;
+  --text-heading: 48px;
+  --text-sub-heading: 40px;
+  --text-lg-body: 32px;
+  --text-body: 24px;
+  --text-sm-body: 20px;
+  --text-sub-body: 16px;
+
+  --animate-slide: slide 2s ease-in-out 1;
+  @keyframes slide {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(-100%)
+    }
+  }
+
+}
