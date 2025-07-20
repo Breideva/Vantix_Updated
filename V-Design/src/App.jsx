@@ -1,18 +1,14 @@
-import { Pages } from "./Pages";
-import { Home } from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Products } from "./pages/Products";
-import { Slide } from "./pages/slide";
-import { About } from "./pages/About";
+import Pages from "./Pages";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export default function App() {
   return (
     <>
-    {/* <Products/> */}
-    {/* <Slide/> */}
-      {/* <Home/> */}
-      {/* <About/> */}
-      <div>hello there</div>
+      <Router>
+        <Navbar />
+        <Pages />
+      </Router>
     </>
   );
 }
