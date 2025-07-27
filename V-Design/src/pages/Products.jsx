@@ -1,5 +1,5 @@
 import Squares from "../assets/Union.png";
-import Learn from "../assets/Learning.png";
+import Learn from "../assets/security.png";
 
 export function Products() {
   const App = () => {
@@ -55,7 +55,6 @@ export function Products() {
           <h1 className="text-slide animate-slide">VANTIX</h1>
         </div> */}
         <div className="w-10/12 flex justify-center items-center relative">
-          <img className="absolute right-0 h-full" src={Squares} alt="" />
           <div className="grid grid-cols-3 w-full h-[325vh] gap-4 relative z-10">
             <div className="border-border border-2 w-full h-full col-span-1 row-span-2 bg-gradient-to-tr from-stb from-50% to-lstb"></div>
             <div className="border-border border-2 w-full h-full col-span-1 row-span-2 bg-gradient-to-br from-stb from-50% to-lstb"></div>
@@ -82,8 +81,8 @@ export function Products() {
           <img className="absolute left-0 h-full" src={Squares} alt="" />
           <div className="w-1/2 h-full flex flex-col justify-center items-center gap-4 relative z-10">
             <h2 className="text-lg-heading leading-tight">
-              Turning another <span className="text-border">boring day</span>{" "}
-              into a <span className="text-border">learning</span> oppurtunity
+              With <span className="text-border">privacy</span>{" "}
+              and <span className="text-border">security</span> being a top priority
             </h2>
             <p className="text-body font-light">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
@@ -91,6 +90,7 @@ export function Products() {
               iusto sint dolore quasi sequi quaerat, ad, incidunt impedit
               voluptatem soluta optio ut nam.
             </p>
+            <p>Using trusted sources like <span className="text-border underline">Google Authorization</span></p>
           </div>
           <div className="w-1/2 h-full flex flex-col justify-center items-center gap-4 relative z-10">
             <img src={Learn} alt="" />

@@ -1,4 +1,6 @@
 import Squares from "../assets/Union.png";
+import Learning from "../assets/people.png";
+
 
 export function About() {
   return (
@@ -34,7 +36,28 @@ export function About() {
           </div>
         </div>
       </div>
-      <div className="bg-bg w-full min-h-screen flex justify-center"></div>
+      <div className="bg-bg w-full flex justify-center min-h-screen text-text font-inter relative">
+              <div className="w-10/12 flex justify-center items-start relative gap-8">
+                <img className="absolute right-0 h-full" src={Squares} alt="" />
+                <div className="w-1/2 h-full flex flex-col justify-center items-center relative z-10">
+                  <img src={Learning} alt="" />
+                </div>
+                <div className="w-1/2 h-full flex flex-col justify-center items-center gap-4 relative z-10">
+                  <h2 className="text-lg-heading leading-tight">
+                    With <span className="text-border">privacy</span>{" "}
+                    and <span className="text-border">security</span> being a top priority
+                  </h2>
+                  <p className="text-body font-light">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                    pariatur dicta commodi perferendis cupiditate nostrum, reiciendis
+                    iusto sint dolore quasi sequi quaerat, ad, incidunt impedit
+                    voluptatem soluta optio ut nam.
+                  </p>
+                  <p>Using trusted sources like <span className="text-border underline">Google Authorization</span></p>
+                </div>
+                
+              </div>
+            </div>
     </div>
   );
 }

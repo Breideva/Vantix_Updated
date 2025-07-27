@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import Logo from "../assets/Vantix-AI.png";
 
 export default function Navbar() {
   const [linesOpen, setLinesOpen] = useState(false);
@@ -70,14 +71,14 @@ export default function Navbar() {
           <div className="w-7/8 flex p-2">
             <div className="w-1/3"></div>
             <Link to="/" className="w-1/3 flex justify-center text-xs">
-             <div>Home</div> {/* <img className="w-6 sm:w-8 h-6 sm:h-8" src={Logo} alt="" /> */}
+              <img className="h-6 sm:h-10" src={Logo} alt="" />
             </Link>
-            <button className="w-1/3 flex justify-end" onClick={toggleMobile}>
-              <RxHamburgerMenu className=" text-xs sm:text-sm" />
+            <button className="w-1/3 flex justify-end items-center" onClick={toggleMobile}>
+              <RxHamburgerMenu className=" text-sm-body sm:text-body" />
             </button>
           </div>
           <div
-            className={`absolute bg-dark-700 border-b border-dark-500 w-full top-0 flex justify-center transition-transform duration-300 ${
+            className={`absolute bg-bg border-b border-dark-500 w-full top-0 flex justify-center transition-transform duration-300 ${
               mobileOpen ? "translate-y-0" : "-translate-y-28"
             }`}
           >
@@ -97,7 +98,7 @@ export default function Navbar() {
                   </Link>
                 ))}
               </ul>
-              <button className="w-1/3 flex justify-end">
+              <button className="w-1/3 flex justify-end mt-4">
                 <RxCross1
                   onClick={toggleMobile}
                   className="text-xs sm:text-sm"
@@ -110,23 +111,24 @@ export default function Navbar() {
         <div className="w-full flex justify-center sticky top-0 text-xxxs py-1 z-30">
           <div className="flex items-center w-3/4 justify-center font-light">
             <div className="flex w-1/3 justify-start gap-8">
+              <Link to="/">
+                <img className="h-12 my-1" src={Logo} alt="" />
+              </Link>
+            </div>
+            <div className="flex w-1/3 justify-center gap-16 text-sm-body">
               <Link to="/products">Products</Link>
               <Link to="/about">About</Link>
               <Link to="/contact">Contact</Link>
             </div>
-            <div className="flex w-1/3 justify-center text-body">
-              <Link to="/">
-                <div>Home</div>{/* <img className="w-12" src={Logo} alt="" /> */}
-              </Link>
-            </div>
-            <div className="flex w-1/3 justify-end gap-8 text-xxs">
+            <div className="flex w-1/3 justify-end gap-8 text-sm-body">
               <Link
                 to="/test"
-                className="bg-dark-500 px-4 py-1 rounded-md hover:scale-105 transition-all duration-100 hover:bg-dark-300"
+                className="bg-dark-500 px-4 py-1 rounded-md hover:scale-105 transition-all duration-100 hover:bg-dark-300 border-1 border-border"
               >
                 {" "}
-                Get Started
+                View Our Work
               </Link>
+              <div className="absolute w-40 h-10 bg-border z-20 blur-3xl"></div>
             </div>
           </div>
         </div>

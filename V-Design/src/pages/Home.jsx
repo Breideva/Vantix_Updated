@@ -1,6 +1,6 @@
 import Squares from "../assets/Union.png";
 import Main from "../assets/Main.png";
-import Learning from "../assets/Learning.png";
+import Learning from "../assets/upload.png";
 import { Boxes } from "../components/boxes";
 import { DesignSquares } from "../components/DesignSquares";
 
@@ -61,21 +61,7 @@ export function Home() {
       </div>
         <div className="bg-bg w-full flex justify-center min-h-screen text-text font-inter relative">
         <div className="w-10/12 flex justify-center items-start relative">
-          <img className="absolute right-0 h-full" src={Squares} alt="" />
-          <div className="w-1/2 h-full flex flex-col justify-center items-center gap-4 relative z-10">
-            <h2 className="text-lg-heading leading-tight">
-              Turning another <span className="text-border">boring day</span>{" "}
-              into a <span className="text-border">learning</span> oppurtunity
-            </h2>
-            <p className="text-body font-light">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-              pariatur dicta commodi perferendis cupiditate nostrum, reiciendis
-              iusto sint dolore quasi sequi quaerat, ad, incidunt impedit
-              voluptatem soluta optio ut nam.
-            </p>
-          </div>
-          <div className="w-1/2 h-full flex flex-col justify-center items-center gap-4 relative z-10">
-          <img src={Learning} alt="" /></div>
+         
         </div>
       </div>
     </div>
