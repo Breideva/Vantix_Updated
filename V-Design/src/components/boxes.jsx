@@ -1,16 +1,10 @@
 export function Boxes() {
   return (
-    <div>
-      <div className="border-border rounded-lg bg-gradient-to-br from-box from-50% to-lbox border-[1px] h-3/5"></div>
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-heading font-medium">
-          <span className="text-border">Real-Time</span> Chat
-        </h2>
-        <p className="text-body font-light w-7/8">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-          maxime hic harum quis neque odio modi iste. Vitae, qui quos eveniet
-          quo sint a minima ex, 
-        </p>
+    <div className="w-full h-full flex flex-col items-center justify-center font-arimo">
+      <div className="w-4/5 h-1/2 bg-box rounded-xl"></div>
+      <div className="w-full flex flex-col items-center text-center">
+        <h3 className="text-body font-bold mt-2">Interactive text</h3>
+        <p className="text-sub-body text-l-text w-3/4">Body text for whatever you’d like to add more to the for another Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
   );

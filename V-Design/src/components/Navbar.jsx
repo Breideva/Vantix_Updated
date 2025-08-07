@@ -61,8 +61,8 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed z-50 top-0 left-0 w-full 
-        ${background ? "bg-transparent" : "bg-blur-dark-700 backdrop-blur-3xl"}
+      className={`fixed z-50 top-0 left-0 w-full font-arimo
+        ${background ? "bg-transparent" : "bg-l-bg backdrop-blur-3xl"}
         text-white transition-transform duration-300
         ${isVisible ? "translate-y-0" : "-translate-y-30"}`}
     >
@@ -73,7 +73,10 @@ export default function Navbar() {
             <Link to="/" className="w-1/3 flex justify-center text-xs">
               <img className="h-6 sm:h-10" src={Logo} alt="" />
             </Link>
-            <button className="w-1/3 flex justify-end items-center" onClick={toggleMobile}>
+            <button
+              className="w-1/3 flex justify-end items-center"
+              onClick={toggleMobile}
+            >
               <RxHamburgerMenu className=" text-sm-body sm:text-body" />
             </button>
           </div>
@@ -92,7 +95,7 @@ export default function Navbar() {
                   <Link
                     to={item.to}
                     key={index}
-                    className="w-full flex justify-center text-xxxs font-light"
+                    className="w-full flex justify-center text-xxxs"
                   >
                     {item.title}
                   </Link>
@@ -109,7 +112,7 @@ export default function Navbar() {
         </div>
       ) : (
         <div className="w-full flex justify-center sticky top-0 text-xxxs py-1 z-30">
-          <div className="flex items-center w-3/4 justify-center font-light">
+          <div className="flex items-center w-3/4 justify-center">
             <div className="flex w-1/3 justify-start gap-8">
               <Link to="/">
                 <img className="h-12 my-1" src={Logo} alt="" />
@@ -123,12 +126,11 @@ export default function Navbar() {
             <div className="flex w-1/3 justify-end gap-8 text-sm-body">
               <Link
                 to="/test"
-                className="bg-dark-500 px-4 py-1 rounded-md hover:scale-105 transition-all duration-100 hover:bg-dark-300 border-1 border-border"
+                className="bg-dark-500 px-4 py-1 rounded-full hover:scale-105 transition-all duration-100 hover:bg-dark-300 border-1 border-border"
               >
                 {" "}
                 View Our Work
               </Link>
-              <div className="absolute w-40 h-10 bg-border z-20 blur-3xl"></div>
             </div>
           </div>
         </div>
