@@ -2,13 +2,17 @@
 
 @theme {
   --font-koh: "Koh Santepheap", "sans-serif";
-  --font-inter: "Inter", "sans-serif";
+  --font-arimo: "Arimo", "sans-serif";
 
   --color-bg: #0e0227;
+  --color-l-bg: rgba(14, 2, 39, 0.85);
+  --color-footer: #11032F;
+
   --color-stb: rgba(26, 2, 59, 0.5);
   --color-lstb: rgba(71, 5, 161, 0.5);
-  --color-box: #1a023b;
+  --color-box: rgba(17, 4, 45, 0.75);
   --color-lbox: #4705a1;
+  --color-border: #9B5ED8;
   --color-text: #f4f4f4;
   --color-l-text: #f4f4f480;
 
@@ -18,11 +22,14 @@
   --color-fade: linear-gradient(to right, #1a023b 25%, #4705a1);
 
 
-  --text-slide: 428px;
+  --text-slide:375px;
   --text-title: 120px;
   --leading-title: 120px;
 
   --text-lg-heading: 64px;
+  --leading-lg-heading: 64px;
+
+
   --text-heading: 48px;
   --text-sub-heading: 40px;
   --text-lg-body: 32px;
@@ -40,4 +47,8 @@
     }
   }
 
+}
+
+.dccd {
+  color: rgba(14, 2, 39, 0.5);
 }
